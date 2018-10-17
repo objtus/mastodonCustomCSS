@@ -1,1 +1,2 @@
-# mastodonCustomCSS
+## mastodonCustomCSS
+#stylus用カスタムCSSです
