@@ -1,0 +1,141 @@
+﻿@-moz-document domain("knzk.me"), domain("pawoo.net"), domain("mostodon.cloud"), regexp("(http(s)?:\\/\\/)?(mastodon.+)"), regexp("(http(s):\\/\\/)?(mstdn.+)"), regexp("(http(s)?:\\/\\/).*masto.host.*") {
+/*非公開色分け*/
+.status-private {
+    background: #01014ccc !important;
+}
+.status .fa-lock::before {
+    color: #deef16 !important;
+}
+
+
+
+
+/*未収載色分け*/
+.status-unlisted {
+    background: #270032b5 !important;
+}
+
+
+
+/*スクロールバー高さ調整*/
+::-webkit-scrollbar {
+    height: 20px !important;
+}
+
+
+
+
+/*ブーストアイコンの色変えCSS*/
+.active .fa-retweet:after {
+    content: '\f079' !important;
+    color: #7225ff !important;
+}
+
+.fa-retweet:after {
+    content: '\f079' !important;
+    color: #6e6e86ab !important;
+}
+.fa-retweet:before {
+    display: none !important;
+}
+
+.fa-retweet {
+    background: none !important;
+}
+
+
+/*トゥートボタン色変え*/
+.button {
+    background-color: #4c17f7 !important;
+}
+
+
+
+
+/*drawerカラム色変え*/
+.drawer__inner {
+    background-color: #24222c !important;
+}
+
+
+/*通知favアイコン色変え*/
+.notification__favourite-icon-wrapper .star-icon,
+.star-icon.active {
+    color: #deef16;
+}
+
+.drawer__header {
+    background: #000000 !important;
+}
+
+.search__input {
+    background: #2e2d32 !important;
+    color: #9bb0c8 !important;
+}
+
+
+/*カラムヘッダー色変え*/
+.column-header {
+    background: #232225 !important;
+}
+
+.column-header__button {
+    background: #232225 !important;
+}
+
+.column > .scrollable {
+    background: #0b0c0e !important;
+}
+
+
+/*ヘッダー戻るボタン色変え*/
+.column-header__back-button {
+    background: #232225 !important;
+    color: #7e64ff !important;
+}
+
+.column-back-button {
+    background: #232225 !important;
+    color: #7e64ff !important;
+}
+
+.column-link {
+    background: #1c1a23 !important;
+}
+
+.column-link__badge, .column-subheading {
+    background: #1c1a23 !important;
+}
+
+.flex-spacer, .getting-started, .getting-started__wrapper {
+    background: #1c1a23;
+}
+
+.compose-form .compose-form__buttons-wrapper {
+    background: #d3d1da !important;
+}
+
+.empty-column-indicator, .error-column {
+    color: #626084 !important;
+    background: #0b0c0e !important;
+}
+
+/*検索バー上下の隙間を狭める*/
+.search__input{
+        padding-top: 1px;
+        padding-bottom: 1px;
+        height: 37px;
+}
+.search,.drawer__header{
+        margin-bottom: 6.5px;
+}
+.drawer,.column{
+        padding-top: 8px;
+        padding-bottom: 5px;
+}
+    
+/*トゥート入力フォーム下端サイズ*/
+.compose-form .compose-form__buttons-wrapper{
+        padding: 5px;
+}
+}
