@@ -1,2 +1,2 @@
 ### mastodonCustomCSS
-stylus用カスタムCSSです
+カスタムCSSです
